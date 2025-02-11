@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 17, 24, 39;
+  --accent-cyan: 45, 212, 255;
+  --accent-yellow: 255, 183, 0;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .heading-hero {
+    @apply text-6xl sm:text-7xl md:text-8xl font-bold;
+  }
+  
+  .accent-tag {
+    @apply bg-[#FF6B00] text-white px-4 py-2 rounded-lg inline-block;
+  }
+  
+  .btn-primary {
+    @apply bg-[#2DD4FF] hover:bg-[#1AC2EE] text-[#111827] font-bold py-3 px-6 rounded-lg transition-all duration-300;
+  }
+}
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+      linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
 }
