@@ -29,10 +29,10 @@ const FloatingCTA = () => {
           {/* タイトル */}
           <div className="text-center mb-4">
             <div className="text-[#2DD4FF] font-bold text-lg mb-1">
-              AI爆速LP5日間チャレンジ
+              AIが作る 刺さるLP 5日間無料チャレンジ
             </div>
             <div className="text-white text-sm">
-              たった5日で200万円クラスのLPを作れるようになる
+              文章力もデザインセンスもITスキルも不要
             </div>
           </div>
 
@@ -68,7 +68,7 @@ const FloatingCTA = () => {
           {/* 特典訴求 */}
           <div className="mt-3 text-center">
             <p className="text-[#2DD4FF] text-sm">
-              ＼ 今なら50万トークン（19,700円相当）を無料プレゼント ／
+              ＼ 全9大特典付き！参加者に特別プレゼント ／
             </p>
           </div>
         </motion.div>

@@ -35,7 +35,7 @@ const CallToAction = () => {
           </h2>
 
           <div className="text-2xl font-bold mb-4">
-            AI爆速LP制作5日間チャレンジ
+          AIで作る 刺さるLP 5日間無料チャレンジ！
           </div>
 
           {/* Timerコンポーネントを使用 */}
@@ -62,10 +62,10 @@ const CallToAction = () => {
          group overflow-hidden">
   <div className="relative z-10">
     <span className="text-lg md:text-xl block mb-1">
-      無料でAI爆速LP制作
+      無料で参加する
     </span>
     <span className="text-2xl md:text-3xl block font-extrabold">
-      5日間チャレンジに参加する
+      AIで作る刺さるLP作成チャレンジ
     </span>
     <span className="text-sm block mt-1 opacity-90">
       ＼ 今すぐエントリーできます ／

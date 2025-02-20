@@ -21,12 +21,12 @@ const Future = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-[#2DD4FF]">200万円</span>かかるLPを
+            <span className="text-[#2DD4FF]">文章力も</span>デザインセンスも、
             <br />
-            <span className="text-[#2DD4FF]">5時間</span>で完成させる。
+            <span className="text-[#2DD4FF]">ITスキル</span>も不要。
           </h2>
           <p className="text-2xl text-gray-200 font-bold">
-            これは序章に過ぎません。
+            これが、AIの真の実力です。
           </p>
         </motion.div>
 
@@ -40,24 +40,24 @@ const Future = () => {
             className="bg-gradient-to-r from-gray-900 to-gray-900/50 p-8 rounded-2xl border-l-4 border-[#2DD4FF] shadow-lg"
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-6">
-              なぜなら、この手法は
+              なぜなら、このAIは
               <br />
-              単なる「便利ツール」とは
+              単なる「文章生成」とは
               <br />
               <span className="text-[#2DD4FF] font-bold">次元が違う</span>からです。
             </h3>
 
             <div className="space-y-4 text-xl text-gray-200">
               <div className="flex items-center gap-4">
-                <span className="text-gray-500 line-through">プロンプト100選？</span>
-                <span className="text-[#2DD4FF]">✕ 表面的な対処</span>
+                <span className="text-gray-500 line-through">コピー作成ツール？</span>
+                <span className="text-[#2DD4FF]">✕ 表面的な文章生成</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-gray-500 line-through">テンプレート活用？</span>
-                <span className="text-[#2DD4FF]">✕ 没個性的</span>
+                <span className="text-gray-500 line-through">デザインテンプレート？</span>
+                <span className="text-[#2DD4FF]">✕ 没個性的な見た目</span>
               </div>
               <p className="text-2xl font-bold mt-6">
-                そんな表面的なものではありません。
+                そんな一般的なツールとは違います。
               </p>
             </div>
           </motion.div>
@@ -70,18 +70,18 @@ const Future = () => {
             className="space-y-8"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-[#2DD4FF]">
-              私が提供するのは、
+              AIが実現するのは、
               <br />
-              世界トップクラスのプロセスを
+              人の心を動かす
               <br />
-              AIに組み込んだ、真の実践技術。
+              究極のランディングページです。
             </h3>
 
             <div className="grid gap-4">
               {[
-                '450万円のラッセルブランソンセミナーの知見',
-                '8.4億円の売上を生み出したコンテンツの仕組み',
-                '1700万円規模のアプリケーション開発の手法'
+                '人の心理を完全理解したAIによる文章生成',
+                '反応率を最大化する洗練されたデザイン',
+                '成果を出し続けるLPの自動最適化'
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -110,12 +110,12 @@ const Future = () => {
             <p className="text-2xl mb-6 text-gray-200">
               この5日間で手に入れるのは、
               <br />
-              単なるツールの使い方ではありません。
+              単なるLP制作スキルではありません。
             </p>
             <p className="text-3xl font-bold">
-              <span className="text-[#2DD4FF]">あなたのビジネスを
+              <span className="text-[#2DD4FF]">あなたの事業の価値を
               <br />
-              根本から変革させる力</span>
+              最大限に引き出す力</span>
               <br />
               です。
             </p>
