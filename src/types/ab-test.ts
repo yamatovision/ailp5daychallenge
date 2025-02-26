@@ -20,7 +20,7 @@ export interface ABTestEvent {
   timestamp: number; // Unix timestamp
   sessionId: string;
   sourceId?: string; // UTM source等
-  data?: Record<string, any>; // 追加データ（スクロール位置など）
+  data?: Record<string, unknown>; // 追加データ（スクロール位置など）
 }
 
 // セッション情報

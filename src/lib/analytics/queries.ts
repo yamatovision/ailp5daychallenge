@@ -14,10 +14,9 @@ import {
   TimeSeriesData,
   DeviceBreakdown,
   ComponentAnalysis,
-  TransitionData,
   DashboardSummary,
 } from '@/types/analytics';
-import { getEvents, getEventsByComponent, getEventsByVariant } from '../ab-test/client';
+import { getEvents } from '../ab-test/client';
 
 // 期間で絞り込んだイベントを取得
 const getFilteredEvents = async (filter?: AnalyticsFilter) => {

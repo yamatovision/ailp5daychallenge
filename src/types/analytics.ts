@@ -1,7 +1,7 @@
 /**
  * 分析機能関連の型定義
  */
-import { TestableComponent, Variant, EventType } from './ab-test';
+import { TestableComponent, Variant } from './ab-test';
 
 // フィルター条件
 export interface AnalyticsFilter {
