@@ -10,7 +10,7 @@ import { useABTest } from './useABTest';
  * IntersectionObserverを使ったビューポート内の表示/非表示検出
  */
 const useIntersectionObserver = (
-  elementRef: React.RefObject<HTMLElement>,
+  elementRef: React.RefObject<HTMLElement | null>,
   options: IntersectionObserverInit = { threshold: [0, 0.5, 1] },
   callback?: (entry: IntersectionObserverEntry) => void
 ) => {

@@ -250,7 +250,14 @@ export const getComponentFlow = async (
   );
   
   // 次のコンポーネントへの遷移をカウント
-  const transitions: Record<TestableComponent, { count: number, totalTime: number }> = {};
+  const transitions: Record<TestableComponent, { count: number, totalTime: number }> = {
+    hero: { count: 0, totalTime: 0 },
+    cta: { count: 0, totalTime: 0 },
+    floatingCta: { count: 0, totalTime: 0 },
+    benefits: { count: 0, totalTime: 0 },
+    curriculum: { count: 0, totalTime: 0 },
+    faq: { count: 0, totalTime: 0 }
+  };
   
   exitEvents.forEach(event => {
     const nextComponent = event.data?.nextComponentId as TestableComponent | undefined;
@@ -318,17 +325,17 @@ export const getDeviceBreakdown = async (
   // デバイス内訳配列に変換
   return [
     {
-      deviceType: 'mobile',
+      deviceType: 'mobile' as const,
       count: deviceCounts.mobile,
       percentage: totalCount > 0 ? (deviceCounts.mobile / totalCount) * 100 : 0
     },
     {
-      deviceType: 'tablet',
+      deviceType: 'tablet' as const,
       count: deviceCounts.tablet,
       percentage: totalCount > 0 ? (deviceCounts.tablet / totalCount) * 100 : 0
     },
     {
-      deviceType: 'desktop',
+      deviceType: 'desktop' as const,
       count: deviceCounts.desktop,
       percentage: totalCount > 0 ? (deviceCounts.desktop / totalCount) * 100 : 0
     }

@@ -11,6 +11,7 @@ import {
   DeviceBreakdown,
   TimeSeriesData
 } from '@/types/analytics';
+import { ComponentFlow } from '@/types/ab-test';
 import { 
   getAllComponentAnalyses,
   getDashboardSummary,
@@ -140,7 +141,7 @@ export const useComponentFlow = (
   fromVariant: Variant,
   filter?: AnalyticsFilter
 ) => {
-  const [data, setData] = useState<Record<string, unknown>[]>([]);
+  const [data, setData] = useState<ComponentFlow[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   
   const fetchData = useCallback(async () => {
