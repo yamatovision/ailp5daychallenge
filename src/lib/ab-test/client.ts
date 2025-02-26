@@ -23,7 +23,7 @@ export const saveEvent = async (event: ABTestEvent): Promise<{ id: string }> => 
     localStorage.setItem(EVENTS_STORAGE_KEY, JSON.stringify(updatedEvents));
     
     // Supabaseにデータを送信
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('ab_test_events')
       .insert([{
         id: newEvent.id,
@@ -64,7 +64,7 @@ export const saveEvents = async (events: ABTestEvent[]): Promise<{ ids: string[]
     localStorage.setItem(EVENTS_STORAGE_KEY, JSON.stringify(updatedEvents));
     
     // Supabaseにデータを送信
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('ab_test_events')
       .insert(newEvents.map(event => ({
         id: event.id,

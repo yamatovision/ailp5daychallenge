@@ -1,7 +1,7 @@
 /**
  * ABテストのイベント追跡
  */
-import { ABTestEvent, EventType, TestableComponent, Variant } from '@/types/ab-test';
+import { ABTestEvent, EventType, TestableComponent } from '@/types/ab-test';
 import { saveEvent, saveEvents } from './client';
 import { getCurrentSession, getComponentVariant } from './store';
 
@@ -45,7 +45,7 @@ const stopQueueProcessing = (): void => {
 const trackEvent = async (
   componentId: TestableComponent,
   eventType: EventType,
-  data?: Record<string, any>,
+  data?: Record<string, unknown>,
   immediate = false
 ): Promise<void> => {
   try {
@@ -89,7 +89,7 @@ export const trackView = (componentId: TestableComponent): void => {
 export const trackClick = (
   componentId: TestableComponent,
   elementId?: string,
-  metadata?: Record<string, any>
+  metadata?: Record<string, unknown>
 ): void => {
   trackEvent(componentId, 'click', {
     elementId,

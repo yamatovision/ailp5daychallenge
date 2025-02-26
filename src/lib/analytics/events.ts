@@ -34,7 +34,7 @@ export const sendToFacebookPixel = (
     value?: number;
     variant?: Variant;
     component?: TestableComponent;
-    [key: string]: any;
+    [key: string]: unknown;
   }
 ): void => {
   if (typeof window === 'undefined' || !window.fbq) {
@@ -58,7 +58,7 @@ export const sendToGoogleAnalytics = (
     value?: number;
     variant?: Variant;
     component?: TestableComponent;
-    [key: string]: any;
+    [key: string]: unknown;
   }
 ): void => {
   if (typeof window === 'undefined' || !window.gtag) {
@@ -130,7 +130,9 @@ export const initAnalytics = (): void => {
   if (process.env.NEXT_PUBLIC_FB_PIXEL_ID) {
     try {
       // Facebook Pixelスクリプトを動的に追加
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       window.fbq = window.fbq || function() {
+        // eslint-disable-next-line prefer-rest-params
         (window.fbq.q = window.fbq.q || []).push(arguments);
       };
       window._fbq = window._fbq || window.fbq;
@@ -150,6 +152,7 @@ export const initAnalytics = (): void => {
     try {
       window.dataLayer = window.dataLayer || [];
       window.gtag = function() {
+        // eslint-disable-next-line prefer-rest-params
         window.dataLayer.push(arguments);
       };
       window.gtag('js', new Date());
@@ -163,9 +166,9 @@ export const initAnalytics = (): void => {
 // 型定義を追加
 declare global {
   interface Window {
-    fbq: any;
-    _fbq: any;
-    dataLayer: any[];
-    gtag: (...args: any[]) => void;
+    fbq: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+    _fbq: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+    dataLayer: unknown[];
+    gtag: (...args: unknown[]) => void;
   }
 }

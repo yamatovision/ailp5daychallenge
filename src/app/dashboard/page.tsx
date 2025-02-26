@@ -10,8 +10,8 @@ import { clearTestData } from '@/lib/ab-test/client';
  * ABテスト分析ダッシュボード
  */
 export default function DashboardPage() {
-  // フィルター
-  const [filter, setFilter] = useState<AnalyticsFilter>({});
+  // フィルター - 現在はデフォルト値のみ使用
+  const [filter] = useState<AnalyticsFilter>({});
   
   // コンポーネント分析データを取得
   const { analyses, loading, refresh } = useComponentAnalyses(filter);
