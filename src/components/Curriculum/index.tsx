@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const curriculumData = [
   {
     day: '01',
-    date: '3月3日（日）13:00～14:30',
+    date: '3月10日（月）13:00～14:30',
     title: '爆速AILP作成の全体像',
     points: [
       'なぜAIに任せるべきか',
@@ -16,7 +16,7 @@ const curriculumData = [
   },
   {
     day: '02',
-    date: '3月4日（月）13:00～14:30',
+    date: '3月11日（火）13:00～14:30',
     title: '文章力不要の最強コンセプト作成法',
     points: [
       '収益を最大化するAI市場リサーチ',
@@ -26,7 +26,7 @@ const curriculumData = [
   },
   {
     day: '03',
-    date: '3月5日（火）13:00～14:30',
+    date: '3月12日（水）13:00～14:30',
     title: 'デザインセンス不要の登録率の高いLPフォーマット選定',
     points: [
       '登録率の高いLPモデルをコピーする方法',
@@ -36,7 +36,7 @@ const curriculumData = [
   },
   {
     day: '04',
-    date: '3月6日（水）13:00～14:30',
+    date: '3月13日（木）13:00～14:30',
     title: 'コーディング不要の爆速LP構築法',
     points: [
       'AIに高品質なLPのコードを書かせる方法',
@@ -46,7 +46,7 @@ const curriculumData = [
   },
   {
     day: '05',
-    date: '3月7日（木）13:00～14:30',
+    date: '3月14日（金）13:00～14:30',
     title: '参加費450万円の2CCXで学んだ最強セールスファネルの秘密',
     points: [
       '即日で広告費を回収するセールスファネル',

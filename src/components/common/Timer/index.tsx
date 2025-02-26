@@ -5,7 +5,7 @@ import { useState, useEffect, useMemo } from 'react';
 
 const Timer = () => {
   // targetDateをuseMemoで初期化
-  const targetDate = useMemo(() => new Date('2025-02-24T13:00:00+09:00'), []);
+  const targetDate = useMemo(() => new Date('2025-03-10T13:00:00+09:00'), []);
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
