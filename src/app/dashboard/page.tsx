@@ -24,13 +24,13 @@ export default function DashboardPage() {
     }
   };
   
-  // フィルター変更
-  const handleFilterChange = (key: keyof AnalyticsFilter, value: any) => {
+  // フィルター変更（将来的な拡張用）
+  /* const handleFilterChange = (key: keyof AnalyticsFilter, value: unknown) => {
     setFilter(prev => ({
       ...prev,
       [key]: value
     }));
-  };
+  }; */
   
   // コンポーネント名を表示用に変換
   const getComponentName = (componentId: TestableComponent): string => {

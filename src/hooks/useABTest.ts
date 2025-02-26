@@ -29,7 +29,7 @@ export const useABTest = (componentId: TestableComponent) => {
     // コンポーネントの表示を記録
     trackView(componentId);
     
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // 依存配列はcomponentIdのみで十分
   }, [componentId]);
   
   return {

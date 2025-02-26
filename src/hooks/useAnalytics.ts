@@ -140,7 +140,7 @@ export const useComponentFlow = (
   fromVariant: Variant,
   filter?: AnalyticsFilter
 ) => {
-  const [data, setData] = useState<any[]>([]);
+  const [data, setData] = useState<Record<string, unknown>[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   
   const fetchData = useCallback(async () => {
@@ -162,10 +162,12 @@ export const useComponentFlow = (
   return { data, loading, refresh: fetchData };
 };
 
-export default {
+const analyticsHooks = {
   useDashboardSummary,
   useComponentAnalyses,
   useTimeSeriesData,
   useDeviceBreakdown,
   useComponentFlow
 };
+
+export default analyticsHooks;

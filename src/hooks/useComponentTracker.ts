@@ -75,7 +75,7 @@ export const useComponentTracker = (componentId: TestableComponent) => {
   // コンポーネント内でのクリックを記録
   const trackClickEvent = useCallback((
     elementId?: string,
-    metadata?: Record<string, any>
+    metadata?: Record<string, unknown>
   ) => {
     trackClick(componentId, elementId, metadata);
   }, [componentId]);

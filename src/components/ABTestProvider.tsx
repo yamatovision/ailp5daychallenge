@@ -5,7 +5,7 @@
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { SessionInfo, TestableComponent, Variant } from '@/types/ab-test';
-import { getCurrentSession, initSession } from '@/lib/ab-test/store';
+import { getCurrentSession } from '@/lib/ab-test/store';
 import { initTracker, cleanupTracker } from '@/lib/ab-test/tracker';
 import { initAnalytics } from '@/lib/analytics/events';
 

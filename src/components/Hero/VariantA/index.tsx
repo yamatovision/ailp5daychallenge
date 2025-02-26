@@ -59,7 +59,7 @@ const HeroVariantA = () => {
             animate={{ y: 0, opacity: 1 }}
             className="text-lg md:text-xl text-gray-300"
           >
-            たった5日で、あなたの事業の"強み"を最大限引き出す最強集客LPが完成(このLPもこの工程で作成しています)
+            たった5日で、あなたの事業の&quot;強み&quot;を最大限引き出す最強集客LPが完成(このLPもこの工程で作成しています)
           </motion.p>
 
           <motion.div
